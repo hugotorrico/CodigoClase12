@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //primer comentario Sergio valle
 //primer comentario Hugo Torrico
+//
 using OCP;
 
 

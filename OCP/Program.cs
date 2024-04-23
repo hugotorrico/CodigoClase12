@@ -1,6 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using OCP;
 
+Console.WriteLine("Mi primer comentario MSANJUAN ");
+
 
 Descuento descuento = new DescuentoRegular { Precio = 1000 };
 Descuento descuento2 = new DescuentoVIP { Precio = 1000 };

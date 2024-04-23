@@ -38,6 +38,7 @@ namespace OCP
         private double CalcularSueldoComision()
         {
             // Lógica de cálculo para empleado por comisión
+
             return 1000;
         }
     }

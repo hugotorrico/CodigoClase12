@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OCP
 {
-    public class Descuento
+    public class Descuento2
     {
         public decimal AplicarDescuento(decimal precio, string tipoCliente)
         {
@@ -20,8 +20,35 @@ namespace OCP
             }
             else
             {
-                return precio;
+                return precio*0.5m;
             }
         }
     }
+
+    public  class Descuento
+    {
+        
+        public decimal Precio { get; set; }
+        public virtual decimal Aplicar()
+        {
+            return Precio*0.5m;
+        }
+
+    }
+    public class DescuentoRegular : Descuento
+    {
+        public override decimal Aplicar()
+        {
+            return Precio * 0.9m;
+        }
+    }
+    public class DescuentoVIP : Descuento
+    {
+        public override decimal Aplicar()
+        {
+            return Precio * 0.8m;
+        }
+    }
+
+
 }

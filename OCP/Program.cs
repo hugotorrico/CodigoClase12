@@ -1,7 +1,18 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using OCP;
 
-Console.WriteLine("Hello, World!");
+
+Descuento descuento = new DescuentoRegular { Precio = 1000 };
+Descuento descuento2 = new DescuentoVIP { Precio = 1000 };
+Descuento descuento3 = new Descuento { Precio = 1000 };
+
+
+
+Console.WriteLine(descuento.Aplicar());
+Console.WriteLine(descuento2.Aplicar());
+Console.WriteLine(descuento3.Aplicar());
+
+
 
 //Principios SOLID
 Figura figura = new Circulo { Medida = 10 };
